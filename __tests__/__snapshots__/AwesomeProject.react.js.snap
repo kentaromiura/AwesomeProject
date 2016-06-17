@@ -1,4 +1,4 @@
-exports[`AwesomeProject should work 0`] = `<view
+exports[`AwesomeProject should work 0`] = `<View
   style={
     Object {
       "flex": 1,
@@ -7,7 +7,7 @@ exports[`AwesomeProject should work 0`] = `<view
       "backgroundColor": "#F5FCFF"
     }
   }>
-  <text
+  <Text
     style={
       Object {
         "fontSize": 20,
@@ -16,8 +16,8 @@ exports[`AwesomeProject should work 0`] = `<view
       }
     }>
     Welcome to React Native!
-  </text>
-  <text
+  </Text>
+  <Text
     style={
       Object {
         "textAlign": "center",
@@ -26,8 +26,8 @@ exports[`AwesomeProject should work 0`] = `<view
       }
     }>
     To get started, edit index.ios.js
-  </text>
-  <text
+  </Text>
+  <Text
     style={
       Object {
         "textAlign": "center",
@@ -39,5 +39,5 @@ exports[`AwesomeProject should work 0`] = `<view
     
     
     Cmd+D or shake for dev menu
-  </text>
-</view>`;
+  </Text>
+</View>`;

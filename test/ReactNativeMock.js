@@ -1,23 +1,34 @@
 const React = require('React');
 const {Component} = React;
 const ReactNativeMock = Object.create(null);
-class View extends Component {
-    render() {                
-        const {children} = this.props;
-        const rest = Object.assign({}, this.props);
-        delete rest.children;
-        return <view {...rest}>{this.props.children}</view>;
-    }
+
+class Image extends Component {
+  render() {
+    const {children, ...props} = this.props;
+    return React.createElement('Image', props, children);
+  }
 }
+
 class Text extends Component {
-    render() {
-        const {children} = this.props;
-        const rest = Object.assign({}, this.props);
-        delete rest.children;
-        return <text {...rest}>{children}</text>;
-    }
+  render() {
+    const {children, ...props} = this.props;
+    return React.createElement('Text', props, children);
+  }
 }
-const StyleSheet = {create(what){return what}}
+class View extends Component {
+  render() {
+    const {children, ...props} = this.props;
+    return React.createElement('View', props, children);
+  }
+}
+
+const StyleSheet = {
+  create(id){
+    return id;
+  }
+}
+
+ReactNativeMock.Image = Image;
 ReactNativeMock.Text = Text;
 ReactNativeMock.View = View;
 ReactNativeMock.StyleSheet = StyleSheet;

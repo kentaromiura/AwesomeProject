@@ -5,21 +5,21 @@
   "scripts": {
     "start": "node_modules/react-native/packager/packager.sh"
   },
-  "dependencies": {
-    "react": "*",
-    "react-native": "^0.27.2",
-    "jest": "*",
+  "devDependencies": {
+    "react": "^15.2.0-rc.1",
+    "react-native": "^0.27.2"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
     "babel": "*",
     "babel-preset-react": "*",
     "babel-preset-es2015": "*",
-    "babel-jest": "*"
+    "babel-jest": "*",
+    "jest": "*",
+    "react-native-mock": "^0.2.3"
   },
   "jest": {
     "automock": false,
     "testEnvironment": "node"
-  },
-  "devDependencies": {
-    "react": "^15.1.0",
-    "react-native-mock": "^0.2.3"
   }
 }
